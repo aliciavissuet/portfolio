@@ -51,6 +51,7 @@ body {
 
 p {
     line-height: 25px;
+    margin-left:25px;
 }
 
 .row img {
@@ -189,7 +190,8 @@ section {
 .row {
     max-width: 1245px;
     margin: 0 auto;
-    padding: 75px 0;
+    padding: 25px 0;
+    /* padding-bottom:25px; */
     position: relative;
 }
 
@@ -217,7 +219,7 @@ section {
 }
 
 #clients .col-2-3 [class*='col-'] {
-    padding: 0;
+    padding: 20px;
 }
 
 /* Clearfix */
@@ -380,7 +382,8 @@ section {
 
 .button {
     font-size: 16px;
-    margin: 35px 0;
+    margin-left: 25px;
+    /* margin: 35px 0; */
     padding: 11px 16px;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
@@ -772,6 +775,7 @@ h6 {
     color: #ccc;
     letter-spacing: 2px;
     padding-bottom: 0;
+    text-align: left;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -977,6 +981,9 @@ blockquote {
 #gallery img {
     max-height: 300px;
 }
+#gallery a:hover img{
+    opacity: .0;
+}
 
 #gallery [class*='col-'] {
     padding: 0;
@@ -988,10 +995,82 @@ blockquote {
     overflow: hidden;
 }
 
-#gallery a:hover img {
-    opacity: 0.15;
-    -moz-backface-visibility: hidden;
+
+#gallery a:hover .gallery-text {
+    z-index: -1;
+    display: block;
+     position: absolute;
+     opacity: .25;
+     width: 100%;
+     height: 100%;
+     /* justify-items: space-between; */
 }
+#gallery a:hover .gallery-text-2 {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    /* font-weight: 900;
+    font-size: 16px; */
+     /* justify-items: space-between; */
+}
+.gallery-text-2 {
+    display: none;
+    font-weight: 900;
+    font-size: 16px;
+}
+.gallery-text-2 h2 {
+    margin-left: 25px;
+  font-weight: 900;
+    font-size: 16px;  
+}
+.gallery-text-2 p {
+  font-weight: 600;
+    font-size: 12px;  
+}
+.gallery-text {
+    display: none;
+    
+    z-index: -1;
+}
+/* .gallery-text .hover-img{
+    font-weight: 900;
+    font-size: 16px;
+    z-index: 8;
+} */
+
+
+
+/* #gallery .hover-img {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    overflow-wrap: visible;
+    display: none; */
+    /* opacity: 1; */
+    /* position: absolute; */
+    /* top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+
+#gallery a:hover .gallery-text{
+    position: absolute;
+    background: transparent;
+    z-index: 11;
+    display: block;
+    color: #00618e;
+     -moz-backface-visibility: hidden; 
+}
+/* #gallery a:hover .hover-img{
+    
+    position: absolute;
+    display: block;
+    z-index: 10;
+} */
+
 
 #gallery a:before {
     font-size: 2.2em;
@@ -1098,6 +1177,9 @@ blockquote {
     .featherlight .featherlight-inner {
         /* make sure its visible */
         display: block;
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
     }
 
     .featherlight .featherlight-close-icon {
@@ -1236,7 +1318,9 @@ blockquote {
         display: none;
     }
 }
-
+#fl1 {
+    display: none;
+}
 /* Always display arrows on touch devices */
 @media only screen and (max-device-width: 1024px) {
     .featherlight-next:hover,
@@ -2329,4 +2413,24 @@ blockquote {
 
 
 
-
+.row-special {
+    max-width: 1245px;
+    margin: 0 auto;
+    /* padding: 25px 0; */
+    /* padding-left: 25px; */
+    position: relative;
+}
+.row-skills {
+    padding: 10px;
+    max-width: 1245px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.email-link {
+    font-size: 16px;
+}
+.email-link:hover {
+    color: #00618e;
+    /* font-size: 20px; */
+}
